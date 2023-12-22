@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import pacman from './pacman.gif'
 
-export class Loading extends Component {
-  render() {
+const  Loading = ()=> {
     return (
       <div className='text-center'>
         <img src={pacman} alt='pacman'/>
       </div>
     )
-  }
+  
 }
 
 export default Loading
