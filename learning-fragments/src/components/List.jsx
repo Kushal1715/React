@@ -5,6 +5,13 @@ function List(props) {
     <div>
       <li key={props.item} className="list-group-item">
         {props.item}
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={props.handleOnClick}
+        >
+          shoot
+        </button>
       </li>
     </div>
   );
