@@ -12,6 +12,7 @@ function TodoItem(props) {
             type="button"
             className="btn btn-danger mx-4"
             style={{ width: "100%" }}
+            onClick={() => props.toDelete(props.item)}
           >
             Delete
           </button>
