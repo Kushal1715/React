@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { IoIosAddCircle } from "react-icons/io";
+import { ItemsFromContext } from "../store/items-store";
 
-function TodoList({ handleOnClick }) {
+function TodoList() {
+  const { toAddItems } = useContext(ItemsFromContext);
   const updateText = useRef("");
   const updateDate = useRef("");
 
@@ -9,7 +11,7 @@ function TodoList({ handleOnClick }) {
     event.preventDefault();
     let text = updateText.current.value;
     let date = updateDate.current.value;
-    handleOnClick(text, date);
+    toAddItems(text, date);
     updateText.current.value = "";
     updateDate.current.value = "";
   };
