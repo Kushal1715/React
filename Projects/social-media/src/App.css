@@ -1,0 +1,18 @@
+.containers{
+  display: flex;
+}
+
+.content{
+  width: 100%;
+}
+
+.post{
+  margin: 50px;
+  padding: 20px;
+}
+
+.formPost{
+  margin: 50px;
+  padding: 20px;
+  width: 60%;
+}
