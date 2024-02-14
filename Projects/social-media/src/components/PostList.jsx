@@ -10,7 +10,7 @@ function PostList() {
     <>
       <EmptyList />
       {postlist.map((list) => (
-        <Post key={list.key} list={list} />
+        <Post key={list.id} list={list} />
       ))}
     </>
   );

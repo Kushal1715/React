@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect } from "react";
 
 export const PostListStore = createContext({
   postlist: [],
@@ -7,55 +7,23 @@ export const PostListStore = createContext({
 });
 
 const PostListParent = ({ children }) => {
-  const defaultPostList = [
-    {
-      key: 1,
-      title: "Find a job",
-      body: "I am a react developer who is searching to find a job in react",
-      reactions: 3,
-      hashtags: ["job", "react"],
-      user: "user-07",
-    },
-    {
-      key: 2,
-      title: "Buy a car",
-      body: "I am going to buy a car which was always my dream since my childhood",
-      reactions: 100,
-      hashtags: ["car", "buy"],
-      user: "user-1",
-    },
-  ];
-
   const reducer = (currentPostList, action) => {
     let newPostList = currentPostList;
     if (action.type === "delete_post") {
       newPostList = currentPostList.filter((post) => post.key != action.id);
+    } else if (action.type === "add_initial_post") {
+      newPostList = action.posts;
     } else if (action.type === "add_post") {
-      newPostList = [
-        ...currentPostList,
-        {
-          key: action.key,
-          title: action.title,
-          body: action.body,
-          reactions: action.reaction,
-          hashtags: [action.hashtags],
-          user: action.user,
-        },
-      ];
+      newPostList = [action.post, ...currentPostList];
     }
     return newPostList;
   };
-  const [postlist, postlistDispatcher] = useReducer(reducer, defaultPostList);
+  const [postlist, postlistDispatcher] = useReducer(reducer, []);
 
-  const addPost = (title, body, reaction, hashtags, user) => {
+  const addPost = (post) => {
     postlistDispatcher({
       type: "add_post",
-      key: Date.now(),
-      title: title,
-      body: body,
-      reaction: reaction,
-      hashtags: hashtags,
-      user: user,
+      post: post,
     });
   };
 
@@ -65,6 +33,19 @@ const PostListParent = ({ children }) => {
       id: id,
     });
   };
+
+  const addInitialPost = (posts) => {
+    postlistDispatcher({
+      type: "add_initial_post",
+      posts: posts,
+    });
+  };
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/posts")
+      .then((res) => res.json())
+      .then((resObj) => addInitialPost(resObj.posts));
+  }, []);
   return (
     <PostListStore.Provider value={{ postlist, addPost, deletePost }}>
       {children}

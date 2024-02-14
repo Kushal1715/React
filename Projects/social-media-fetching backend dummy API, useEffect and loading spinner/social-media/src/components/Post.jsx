@@ -18,7 +18,7 @@ function Post({ list }) {
           <h5 className="card-title">{list.title}</h5>
           <p className="card-text">{list.body}</p>
           <a href="#" className="btn btn-primary">
-            {list.tags.map((tag) => tag + " ")}
+            {list.tags + " "}
           </a>
           <div className="alert alert-success my-3" role="alert">
             Reacted by {list.reactions} peoples.

@@ -12,17 +12,30 @@ function CreatePost() {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     let title = titleElement.current.value;
-    let message = messageElement.current.value;
-    let reaction = reactionElement.current.value;
-    let hashtags = hashtagsElement.current.value;
-    let user = userElement.current.value;
+    let body = messageElement.current.value;
+    let reactions = reactionElement.current.value;
+    let tags = hashtagsElement.current.value;
+    let userId = userElement.current.value;
 
-    addPost(title, message, reaction, hashtags, user);
-    titleElement.current.value = "";
-    messageElement.current.value = "";
-    reactionElement.current.value = "";
-    hashtagsElement.current.value = "";
-    userElement.current.value = "";
+    // titleElement.current.value = "";
+    // messageElement.current.value = "";
+    // reactionElement.current.value = "";
+    // hashtagsElement.current.value = "";
+    // userElement.current.value = "";
+
+    fetch("https://dummyjson.com/posts/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        title: title,
+        body: body,
+        reactions: reactions,
+        tags: tags,
+        userId: userId,
+      }),
+    })
+      .then((res) => res.json())
+      .then((post) => addPost(post));
   };
   return (
     <div>
