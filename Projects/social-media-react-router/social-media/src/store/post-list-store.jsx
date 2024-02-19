@@ -19,7 +19,7 @@ const PostListParent = ({ children }) => {
     return newPostList;
   };
   const [postlist, postlistDispatcher] = useReducer(reducer, []);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const addPost = (post) => {
     postlistDispatcher({
@@ -42,26 +42,26 @@ const PostListParent = ({ children }) => {
     });
   };
 
-  useEffect(() => {
-    let controller = new AbortController();
-    let signal = controller.signal;
-    setLoading(true);
+  // useEffect(() => {
+  //   let controller = new AbortController();
+  //   let signal = controller.signal;
+  //   setLoading(true);
 
-    fetch("https://dummyjson.com/posts")
-      .then((res) => res.json())
-      .then((resObj) => {
-        addInitialPost(resObj.posts);
-        setLoading(false);
-      });
+  //   fetch("https://dummyjson.com/posts")
+  //     .then((res) => res.json())
+  //     .then((resObj) => {
+  //       addInitialPost(resObj.posts);
+  //       setLoading(false);
+  //     });
 
-    return () => {
-      controller.abort(signal);
-    };
-    setLoading(false);
-  }, []);
+  //   return () => {
+  //     controller.abort(signal);
+  //   };
+  //   setLoading(false);
+  // }, []);
 
   return (
-    <PostListStore.Provider value={{ postlist, addPost, deletePost, loading }}>
+    <PostListStore.Provider value={{ postlist, addPost, deletePost }}>
       {children}
     </PostListStore.Provider>
   );
