@@ -1,0 +1,60 @@
+.rightbar{
+  flex: 3.5;
+}
+
+.rightContainer{
+  padding: 20px 20px 0 0;
+}
+
+.topContainer{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gift{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.birthdayText{
+  font-weight: 300;
+}
+
+.ad{
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.friends{
+  margin-bottom:20px;
+}
+
+.friend{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  /* position: relative; */
+}
+
+.online{
+  height: 12px;
+  width: 12px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 30px;
+  border: 2px solid white;
+}
+
+.onlineFriends{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
