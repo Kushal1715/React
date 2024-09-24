@@ -1,6 +1,6 @@
 import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const Signup = () => {
   });
   const [errorMsg, setErrorMsg] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
@@ -27,7 +28,7 @@ const Signup = () => {
 
     try {
       setLoading(true); // Set loading state
-      const res = await fetch("http://localhost:3000/api/auth/signup", {
+      const res = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -50,6 +51,7 @@ const Signup = () => {
         formData.username = "";
         formData.email = "";
         formData.password = "";
+        navigate("/signin");
       }
     } catch (e) {
       setErrorMsg(e.message);
