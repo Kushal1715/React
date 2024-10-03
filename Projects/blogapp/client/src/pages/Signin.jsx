@@ -1,15 +1,18 @@
 import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { userActions } from "../redux/user/userSlice";
+import OAuth from "../components/OAuth";
 
 const Signin = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-  const [errorMsg, setErrorMsg] = useState(null);
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { loading, error: errorMsg } = useSelector((store) => store.user);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
@@ -17,44 +20,33 @@ const Signin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
 
     // Validate form fields
     if (!formData.email || !formData.password) {
-      setErrorMsg("Please fill all the fields");
-      return; // Prevent submission if validation fails
+      return dispatch(userActions.signInFailure("please fill all the fields"));
     }
 
     try {
-      setLoading(true); // Set loading state
+      // Set loading state
+      dispatch(userActions.signInStart());
       const res = await fetch("/api/auth/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
-      // Check if response is ok
-      if (!res.ok) {
-        const data = await res.json();
-        setErrorMsg(data.message || "Something went wrong");
-        return;
+      const data = await res.json();
+
+      if (data.success === false) {
+        dispatch(userActions.signInFailure(data.message));
       }
 
-      const data = await res.json();
-      if (data.success === false) {
-        setErrorMsg(data.message);
-      } else {
-        // Handle successful signup (e.g., redirect, show success message, etc.)
-        setErrorMsg(null); // Clear any previous error messages
-        console.log("Signup successful:", data);
-        formData.email = "";
-        formData.password = "";
+      if (res.ok) {
+        dispatch(userActions.signInSuccess(data));
         navigate("/");
       }
     } catch (e) {
-      setErrorMsg(e.message);
-    } finally {
-      setLoading(false); // Reset loading state
+      dispatch(userActions.signInFailure(e.message));
     }
   };
 
@@ -111,6 +103,7 @@ const Signin = () => {
                 "Sign in"
               )}
             </Button>
+            <OAuth />
           </form>
           <div className="mt-4 flex gap-2">
             <span>Don't have an account?</span>
