@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const userRoute = require('./routes/user.route')
 const authRoutes = require('./routes/auth.route')
+const postRoutes = require('./routes/post.route')
 const cors = require('cors')
+const cookieParser = require('cookie-parser')
 
 dotenv.config()
 
@@ -17,6 +19,7 @@ mongoose.connect(process.env.MONGO)
 
 const app = express();
 app.use(express.json())
+app.use(cookieParser())
 
 app.use(cors({
   origin: 'http://localhost:5173', // Allow requests from this origin
@@ -28,6 +31,7 @@ app.listen(3000, () => {
 
 app.use('/api/user', userRoute)
 app.use('/api/auth', authRoutes)
+app.use('/api/post', postRoutes)
 
 //creating a middleware
 app.use((err, req, res, next) => {
