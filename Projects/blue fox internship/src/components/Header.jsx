@@ -1,11 +1,32 @@
 import { Button, Navbar, TextInput } from "flowbite-react";
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "/logo.png";
 import { AiOutlineSearch } from "react-icons/ai";
+import { FaCartShopping } from "react-icons/fa6";
 
 const Header = () => {
   const path = useLocation().pathname;
+  const navigate = useNavigate();
+  const [cartItemNumber, setCartItemNumber] = useState(0);
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("cartData")) || [];
+    setCartItemNumber(data.length);
+
+    // Event listener for the custom event
+    const updateCartCount = () => {
+      const updatedData = JSON.parse(localStorage.getItem("cartData")) || [];
+      setCartItemNumber(updatedData.length);
+    };
+
+    window.addEventListener("cartUpdated", updateCartCount);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("cartUpdated", updateCartCount);
+    };
+  }, []);
   return (
     <nav className="border-b-2 lg:px-[80px] bg-blue-100">
       <Navbar className="bg-blue-100">
@@ -24,6 +45,7 @@ const Header = () => {
         {/* <Button color="gray" className="w-12 h-10 hidden lg:inline" pill>
           <AiOutlineSearch size={20} />
         </Button> */}
+
         <Navbar.Toggle className="text-center" />
 
         <Navbar.Collapse>
@@ -48,6 +70,10 @@ const Header = () => {
             </Navbar.Link>
           </Link>
         </Navbar.Collapse>
+        <div className="flex cursor-pointer" onClick={() => navigate("/cart")}>
+          <FaCartShopping size={30} />
+          <span>{cartItemNumber}</span>
+        </div>
       </Navbar>
     </nav>
   );
