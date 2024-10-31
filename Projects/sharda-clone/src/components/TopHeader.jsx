@@ -11,11 +11,11 @@ import { IoSearchOutline } from "react-icons/io5";
 const TopHeader = () => {
   return (
     <div className="px-4 xl:px-[180px] lg:pt-2">
-      <div className=" hidden lg:flex justify-between items-center ">
+      <div className=" hidden lg:flex lg:justify-between lg:items-center">
         <div className="flex items-center  gap-3">
           <IoIosMail className="text-blue-500 border border-blue-500 rounded-full p-2 text-4xl" />
           <a href="#" className="hover:text-blue-500">
-            info@shardaclone.com.np
+            info@shardaclonewebsite.com.np
           </a>
           <FaPhone className="text-blue-500 border border-blue-500 rounded-full p-2 text-4xl" />
           <p>(+977) 9824567890/9812345678</p>
