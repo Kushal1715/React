@@ -2,6 +2,7 @@ import React from "react";
 import background from "/home/background.jpg";
 import logo from "/logo/logo.png";
 import About from "../components/About";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Services />
     </>
   );
 };

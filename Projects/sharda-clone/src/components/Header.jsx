@@ -36,7 +36,7 @@ const Header = () => {
     setServiceDropDown(!serviceDropDown);
   };
   return (
-    <div className=" px-4 xl:px-[180px] pt-1">
+    <div className=" px-4 xl:px-[180px] pt-1 sticky top-0 h-20 z-50 bg-white w-full">
       <div className="lg:border-t-2 flex justify-between items-center">
         <div className="w-20 h-20 overflow-hidden">
           <img src={logo} alt="logo" className="w-full h-full object-contain" />
@@ -58,7 +58,7 @@ const Header = () => {
               </Link>
 
               {aboutDropDown && (
-                <ul className="absolute top-full  bg-white  rounded-lg shadow-lg w-80 text-gray-700 text-[18px]">
+                <ul className="absolute top-full  bg-white  rounded-lg z-10 shadow-lg w-80 text-gray-700 text-[18px]">
                   <Link to="/about-us">
                     <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl">
                       About Us
@@ -111,7 +111,7 @@ const Header = () => {
                 SERVICES <IoMdArrowDropdown />
               </Link>
               {serviceDropDown && (
-                <ul className="absolute top-full  bg-white  rounded-lg shadow-lg w-80 text-gray-700 text-[18px]  font-sans">
+                <ul className="absolute top-full  bg-white  rounded-lg shadow-lg w-80 text-gray-700 text-[18px]  font-sans z-40">
                   <Link to="/services/social-media-management">
                     <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl">
                       Social Media Management
@@ -198,7 +198,7 @@ const Header = () => {
             onClick={toggleNavbar}
           />
           {openNavbar && (
-            <div className="absolute border-2 top-0 right-0 opacity-100 flex justify-between w-[400px] sm:w-[500px] md:w-[600px] p-10 bg-gray-100 min-h-screen">
+            <div className="absolute border-2 top-0 right-0 opacity-100 flex justify-between w-[400px] sm:w-[500px] md:w-[600px] p-10 bg-gray-100 min-h-screen z-10">
               <ul className="flex flex-col gap-5 text-md sm:text-xl md:text-xl">
                 <li className="mt-10">
                   <Link
