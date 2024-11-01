@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <div className="xl:px-[180px] px-4 py-4 md:py-10 bg-black text-white">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-11">
+        <div className="flex flex-col lg:flex-row lg:justify-between  gap-11">
           <div className="basis-2/4">
             <div className="">
               <div className="w-40 h-40 overflow-hidden">
