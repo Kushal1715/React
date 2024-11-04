@@ -3,6 +3,11 @@ import background from "/home/background.jpg";
 import logo from "/logo/logo.png";
 import About from "../components/About";
 import Services from "../components/Services";
+import Works from "../components/Works";
+import Testimonials from "../components/Testimonials";
+import VideoEmbed from "../components/VideoEmbed";
+import OurWorkPortfolio from "../components/OurWorkPortfolio";
+import Numbers from "../components/Numbers";
 
 const Home = () => {
   return (
@@ -23,6 +28,10 @@ const Home = () => {
       </div>
       <About />
       <Services />
+      <Works />
+      <Testimonials />
+      <OurWorkPortfolio />
+      <Numbers />
     </>
   );
 };
