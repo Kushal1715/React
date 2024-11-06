@@ -1,9 +1,9 @@
-import service1 from "/services/service1.png"
-import service2 from "/services/service2.png"
-import service3 from "/services/service3.png"
-import service4 from "/services/service4.png"
-import service5 from "/services/service5.png"
-import service6 from "/services/service6.png"
+import service1 from "/services/service1.svg"
+import service2 from "/services/service2.svg"
+import service3 from "/services/service3.svg"
+import service4 from "/services/service4.svg"
+import service5 from "/services/service5.svg"
+import service6 from "/services/service6.svg"
 
 import work1 from "/works/work1.jpeg"
 import work2 from "/works/work2.jpg"
@@ -11,6 +11,12 @@ import work3 from "/works/work3.jpg"
 import work4 from "/works/work4.jpg"
 import work5 from "/works/work5.jpg"
 import work6 from "/works/work6.png"
+
+import client1 from "/clients/newmew_logo.jpg"
+
+import blog1 from "/blogs/blog1.jpg"
+import blog2 from "/blogs/blog2.jpg"
+import blog3 from "/blogs/blog3.jpg"
 
 export const services = [
   {
@@ -117,7 +123,6 @@ export const testimonials = [
       "Had worked with Sharda Production for an event and it was exceptionally smooth execution along with amazing results. Although it was very last min...",
     avatar: "https://via.placeholder.com/100x100.png?text=RB",
   },
-  // Add more testimonials as needed
   {
     name: "Reena Bajagain",
     date: "2022-12-01",
@@ -127,3 +132,73 @@ export const testimonials = [
     avatar: "https://via.placeholder.com/100x100.png?text=RB",
   },
 ];
+
+export const clients = [
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+  {
+    logo: client1
+  },
+
+]
+
+export const blogs = [
+  {
+    image: blog1,
+    title: "Logo Making",
+    desc: "Sharda Production’s Guide to Exceptional Logo Making Intro: Logo Making Logo Making: In the world of branding, a logo is not just a symbol but the heart of a company’s",
+    date: "February 25, 2024"
+  },
+  {
+    image: blog2,
+    title: "Logo Designing",
+    desc: "Behind the Scenes: The Art of Logo Designing with Sharda Production Intro: Logo Designing Logo Designing: In a world inundated with brands clamoring for attention, a logo does not just",
+    date: "February 25, 2024"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024"
+  },
+]

@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import { FaStar } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { testimonials } from "../data";
-import { ImQuotesLeft } from "react-icons/im";
 
 const TestimonialSwiper = () => {
   return (
