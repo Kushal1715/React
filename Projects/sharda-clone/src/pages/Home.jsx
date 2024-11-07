@@ -10,6 +10,7 @@ import OurWorkPortfolio from "../components/OurWorkPortfolio";
 import Numbers from "../components/Numbers";
 import OurClients from "../components/OurClients";
 import OurRecentBlog from "../components/OurRecentBlog";
+import CallToAction from "../components/CallToAction";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
       <Numbers />
       <OurClients />
       <OurRecentBlog />
+      <CallToAction />
     </>
   );
 };
