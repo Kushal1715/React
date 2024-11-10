@@ -1,8 +1,8 @@
 import React from "react";
-import { blogs } from "../data";
+import { careerJobsAndIntern } from "../data";
 import { BlogCard } from "./BlogCard";
 
-const OurRecentBlog = ({ category, title, desc }) => {
+const CareerJobsAndIntern = ({ category, title, desc }) => {
   return (
     <div className="px-4 xl:px-[180px] pt-14 pb-14">
       <div>
@@ -12,12 +12,12 @@ const OurRecentBlog = ({ category, title, desc }) => {
           <p className="text-xl max-w-[900px] mx-auto">{desc}</p>
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4">
-          {blogs.map((blog, i) => (
+          {careerJobsAndIntern.map((c, i) => (
             <BlogCard
-              image={blog.image}
-              title={blog.title}
-              desc={blog.desc}
-              date={blog.date}
+              image={c.image}
+              title={c.title}
+              desc={c.desc}
+              date={c.date}
               key={i}
             />
           ))}
@@ -27,4 +27,4 @@ const OurRecentBlog = ({ category, title, desc }) => {
   );
 };
 
-export default OurRecentBlog;
+export default CareerJobsAndIntern;

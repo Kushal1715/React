@@ -18,6 +18,8 @@ import blog1 from "/blogs/blog1.jpg"
 import blog2 from "/blogs/blog2.jpg"
 import blog3 from "/blogs/blog3.jpg"
 
+import c4 from '/career/c4.jpg'
+
 export const services = [
   {
     path: "social-media-management",
@@ -200,5 +202,44 @@ export const blogs = [
     title: "Brand Building",
     desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
     date: "February 25, 2024"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024"
+  },
+]
+
+export const careerJobsAndIntern = [
+  {
+    image: c4,
+    title: "Internship Opportunity for Freshers",
+    desc: "𝐈𝐍𝐓𝐄𝐑𝐍𝐒𝐇𝐈𝐏 𝐎𝐏𝐏𝐎𝐑𝐓𝐔𝐍𝐈𝐓𝐘 Join our team and grow with us through our internship program Digital marketing intern Sales & marketing intern Copywriter intern Videographer intern To apply, mail us the following",
+    date: "April 3, 2023"
+  },
+  {
+    image: c4,
+    title: "Internship Opportunity for Freshers",
+    desc: "𝐈𝐍𝐓𝐄𝐑𝐍𝐒𝐇𝐈𝐏 𝐎𝐏𝐏𝐎𝐑𝐓𝐔𝐍𝐈𝐓𝐘 Join our team and grow with us through our internship program Digital marketing intern Sales & marketing intern Copywriter intern Videographer intern To apply, mail us the following",
+    date: "April 3, 2023"
+  },
+  {
+    image: c4,
+    title: "Internship Opportunity for Freshers",
+    desc: "𝐈𝐍𝐓𝐄𝐑𝐍𝐒𝐇𝐈𝐏 𝐎𝐏𝐏𝐎𝐑𝐓𝐔𝐍𝐈𝐓𝐘 Join our team and grow with us through our internship program Digital marketing intern Sales & marketing intern Copywriter intern Videographer intern To apply, mail us the following",
+    date: "April 3, 2023"
   },
 ]

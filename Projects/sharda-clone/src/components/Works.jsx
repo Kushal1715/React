@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { WorkCard } from "./WorkCard";
 import { works } from "../data";
+import { useLocation } from "react-router-dom";
 
 const Works = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [pathname, setPathname] = useState(null);
   const handleCategory = (category) => {
     setSelectedCategory(category);
   };
@@ -12,9 +14,27 @@ const Works = () => {
     selectedCategory === "All"
       ? works
       : works.filter((work) => work.category === selectedCategory);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setPathname(location.pathname);
+  }, []);
   return (
     <div className="px-4 xl:px-[180px] pt-14 bg-gray-200 pb-14">
-      <h1 className="text-center text-4xl font-bold pb-14">Our Recent Works</h1>
+      <div className="pb-14">
+        <h1 className="text-center text-4xl font-bold pb-6">
+          Our Recent Works
+        </h1>
+        {pathname === "/our-works" && (
+          <p className="text-xl mx-auto text-center max-w-[900px]">
+            Our Recent Works showcases the latest projects we have completed for
+            our clients. From digital marketing campaigns to web design and
+            development, our team of experts is always pushing the boundaries to
+            deliver exceptional results.
+          </p>
+        )}
+      </div>
       <div className="flex justify-center items-center pb-10">
         <ul className="flex gap-6 flex-wrap justify-center text-xl">
           <li
@@ -77,8 +97,8 @@ const Works = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredCategory.map((work) => (
-          <WorkCard image={work.img} title={work.title} />
+        {filteredCategory.map((work, i) => (
+          <WorkCard image={work.img} title={work.title} key={i} />
         ))}
       </div>
     </div>

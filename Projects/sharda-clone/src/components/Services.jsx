@@ -14,8 +14,8 @@ const Services = () => {
         </p>
       </div>
       <div className="pt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {services.map((service) => (
-          <Link to={`/services/${service.path}`}>
+        {services.map((service, i) => (
+          <Link to={`/services/${service.path}`} key={i}>
             <CardComponent
               key={service.img}
               image={service.img}

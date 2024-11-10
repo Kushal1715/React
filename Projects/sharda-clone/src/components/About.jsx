@@ -1,9 +1,8 @@
 import React from "react";
-import about1 from "/about/about1.png";
 import { useNavigate } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-const About = () => {
+const About = ({ image }) => {
   const navigate = useNavigate();
   return (
     <div className="px-4 xl:px-[180px] pt-14 pb-14">
@@ -43,7 +42,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 pt-10 md:pt-0">
             <div>
-              <img src={about1} alt="about 1" />
+              <img src={image} alt="about 1" />
             </div>
           </div>
         </div>

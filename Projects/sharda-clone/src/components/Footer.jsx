@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="xl:px-[180px] px-4 py-4 md:py-10 bg-black text-white">
+      <div className="xl:px-[180px] px-4 py-4 md:py-10 bg-white text-black">
         <div className="flex flex-col lg:flex-row lg:justify-between  gap-11">
           <div className="basis-2/4">
             <div className="">
