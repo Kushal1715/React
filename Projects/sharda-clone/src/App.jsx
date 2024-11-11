@@ -24,6 +24,7 @@ import WebDevelopment from "./pages/services/WebDevelopment";
 import OurWorks from "./pages/OurWorks";
 import Courses from "./pages/Courses";
 import ContactUs from "./pages/ContactUs";
+import ServicesLayout from "./layouts/ServicesLayout";
 function App() {
   return (
     <>
@@ -32,7 +33,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-
           {/* about  */}
           <Route path="/about-us" element={<AboutUs />} />
           <Route
@@ -50,41 +50,23 @@ function App() {
           <Route path="/about/team" element={<Team />} />
 
           {/* services  */}
-          <Route
-            path="/services/social-media-management"
-            element={<SocialMedia />}
-          />
-          <Route
-            path="/services/digital-promotions"
-            element={<DigitalPromotions />}
-          />
-          <Route
-            path="/services/content-marketing"
-            element={<ContentMarketing />}
-          />
-          <Route
-            path="/services/motion-graphics"
-            element={<MotionGraphics />}
-          />
-          <Route
-            path="/services/graphic-designs"
-            element={<GraphicDesigns />}
-          />
-          <Route path="/services/videography" element={<Videography />} />
-          <Route path="/services/photoshoot" element={<Photoshoot />} />
-          <Route path="/services/seo" element={<SEO />} />
-          <Route path="/services/bulk-sms" element={<BulkSMS />} />
-          <Route
-            path="/services/website-development"
-            element={<WebDevelopment />}
-          />
+          <Route path="/services" element={<ServicesLayout />}>
+            <Route path="social-media-management" element={<SocialMedia />} />
+            <Route path="digital-promotions" element={<DigitalPromotions />} />
+            <Route path="content-marketing" element={<ContentMarketing />} />
+            <Route path="motion-graphics" element={<MotionGraphics />} />
+            <Route path="graphic-designs" element={<GraphicDesigns />} />
+            <Route path="videography" element={<Videography />} />
+            <Route path="photoshoot" element={<Photoshoot />} />
+            <Route path="seo" element={<SEO />} />
+            <Route path="bulk-sms" element={<BulkSMS />} />
+            <Route path="website-development" element={<WebDevelopment />} />
+          </Route>
 
           {/* works  */}
           <Route path="/our-works" element={<OurWorks />} />
-
           {/* courses  */}
           <Route path="/courses" element={<Courses />} />
-
           {/* contact  */}
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

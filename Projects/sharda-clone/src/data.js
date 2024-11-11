@@ -20,6 +20,11 @@ import blog3 from "/blogs/blog3.jpg"
 
 import c4 from '/career/c4.jpg'
 
+import award1 from '/award1.jpg'
+
+import c1 from "/awards/certificate1.jpg";
+
+
 export const services = [
   {
     path: "social-media-management",
@@ -241,5 +246,87 @@ export const careerJobsAndIntern = [
     title: "Internship Opportunity for Freshers",
     desc: "𝐈𝐍𝐓𝐄𝐑𝐍𝐒𝐇𝐈𝐏 𝐎𝐏𝐏𝐎𝐑𝐓𝐔𝐍𝐈𝐓𝐘 Join our team and grow with us through our internship program Digital marketing intern Sales & marketing intern Copywriter intern Videographer intern To apply, mail us the following",
     date: "April 3, 2023"
+  },
+]
+
+export const accomplishments = [
+  {
+    image: award1,
+    title: "The Effie Awards",
+    desc: "This award is a testament to the hard work and dedication of our team, and we are incredibly proud of what we have accomplished together."
+  },
+  {
+    image: award1,
+    title: "The Effie Awards",
+    desc: "This award is a testament to the hard work and dedication of our team, and we are incredibly proud of what we have accomplished together."
+  },
+  {
+    image: award1,
+    title: "The Effie Awards",
+    desc: "This award is a testament to the hard work and dedication of our team, and we are incredibly proud of what we have accomplished together."
+  },
+]
+
+export const certificates = [
+  {
+    image: c1
+  },
+  {
+    image: c1
+  },
+  {
+    image: c1
+  },
+  {
+    image: c1
+  },
+  {
+    image: c1
+  },
+  {
+    image: c1
+  },
+]
+
+export const teams = [
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
+  },
+  {
+    image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    name: "Deepesh Nakarmi",
+    position: "Founder & CMO"
   },
 ]

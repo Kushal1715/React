@@ -1,4 +1,6 @@
 import React from "react";
+import { teams } from "../data";
+import TeamCard from "./TeamCard";
 
 const OurTeam = () => {
   return (
@@ -11,54 +13,14 @@ const OurTeam = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-1 gap-8">
-        <div className="md:max-w-[250px] border-2">
-          <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-            className="w-full"
+        {teams.map((team, i) => (
+          <TeamCard
+            key={i}
+            image={team.image}
+            name={team.name}
+            position={team.position}
           />
-          <div className="p-8 text-center">
-            <h1 className="font-bold  text-xl max-w-36 mx-auto">
-              Deepesh Nakarmi
-            </h1>
-            <span className="text-lg">Founder & CMO</span>
-          </div>
-        </div>
-        <div className="md:max-w-[250px] border-2">
-          <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-            className="w-full"
-          />
-          <div className="p-8 text-center">
-            <h1 className="font-bold  text-xl max-w-36 mx-auto">
-              Deepesh Nakarmi
-            </h1>
-            <span className="text-lg">Founder & CMO</span>
-          </div>
-        </div>
-        <div className="md:max-w-[250px] border-2">
-          <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-            className="w-full"
-          />
-          <div className="p-8 text-center">
-            <h1 className="font-bold  text-xl max-w-36 mx-auto">
-              Deepesh Nakarmi
-            </h1>
-            <span className="text-lg">Founder & CMO</span>
-          </div>
-        </div>
-        <div className="md:max-w-[250px] border-2">
-          <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
-            className="w-full"
-          />
-          <div className="p-8 text-center">
-            <h1 className="font-bold  text-xl max-w-36 mx-auto">
-              Deepesh Nakarmi
-            </h1>
-            <span className="text-lg">Founder & CMO</span>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
