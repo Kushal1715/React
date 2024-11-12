@@ -60,42 +60,42 @@ const Header = () => {
               {aboutDropDown && (
                 <ul className="absolute top-full  bg-white  rounded-lg z-10 shadow-lg w-80 text-gray-700 text-[18px]">
                   <Link to="/about-us">
-                    <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl">
+                    <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl hover:text-white">
                       About Us
                     </li>
                   </Link>
                   <Link to="/about/career-jobs-and-internship">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Career, Jobs and Internship
                     </li>
                   </Link>
                   <Link to="/about/blog">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Blog
                     </li>
                   </Link>
                   <Link to="/about/latest-events">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Latest Events
                     </li>
                   </Link>
                   <Link to="/about/company-profile">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Company Profile
                     </li>
                   </Link>
                   <Link to="/about/our-awards-and-certification">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Our awards and certification
                     </li>
                   </Link>
                   <Link to="/about/our-partners">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Our Partners
                     </li>
                   </Link>
                   <Link to="/about/team">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 rounded-b-xl">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 rounded-b-xl hover:text-white">
                       Our Team
                     </li>
                   </Link>
@@ -113,52 +113,52 @@ const Header = () => {
               {serviceDropDown && (
                 <ul className="absolute top-full  bg-white  rounded-lg shadow-lg w-80 text-gray-700 text-[18px]  font-sans z-40">
                   <Link to="/services/social-media-management">
-                    <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl">
+                    <li className="px-4 py-2 hover:bg-blue-500 mt-4 border-t-2 rounded-t-xl hover:text-white">
                       Social Media Management
                     </li>
                   </Link>
                   <Link to="/services/digital-promotions">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Digital Promotions
                     </li>
                   </Link>
                   <Link to="/services/content-marketing">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Content Marketing
                     </li>
                   </Link>
                   <Link to="/services/motion-graphics">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Motion graphics
                     </li>
                   </Link>
                   <Link to="/services/graphic-designs">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Graphic Designs
                     </li>
                   </Link>
                   <Link to="/services/videography">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Videography
                     </li>
                   </Link>
                   <Link to="/services/photoshoot">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Photoshoot
                     </li>
                   </Link>
                   <Link to="/services/seo">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 ">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200  hover:text-white">
                       SEO
                     </li>
                   </Link>
                   <Link to="/services/bulk-sms">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 hover:text-white">
                       Bulk SMS
                     </li>
                   </Link>
                   <Link to="/services/website-development">
-                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 rounded-b-xl">
+                    <li className="px-4 py-2 hover:bg-blue-500 border-gray-200 rounded-b-xl hover:text-white">
                       Website Development
                     </li>
                   </Link>
