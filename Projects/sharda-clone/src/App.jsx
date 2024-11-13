@@ -25,6 +25,9 @@ import OurWorks from "./pages/OurWorks";
 import Courses from "./pages/Courses";
 import ContactUs from "./pages/ContactUs";
 import ServicesLayout from "./layouts/ServicesLayout";
+import CourseDetails from "./pages/CourseDetails";
+import BlogDetails from "./pages/BlogDetails";
+import WorkDetails from "./pages/WorkDetails";
 function App() {
   return (
     <>
@@ -40,6 +43,7 @@ function App() {
             element={<CareerJobsIntern />}
           />
           <Route path="/about/blog" element={<Blog />} />
+          <Route path="/blogDetails" element={<BlogDetails />} />
           <Route path="/about/latest-events" element={<LatestEvents />} />
           <Route path="/about/company-profile" element={<CompanyProfile />} />
           <Route
@@ -65,8 +69,11 @@ function App() {
 
           {/* works  */}
           <Route path="/our-works" element={<OurWorks />} />
+          <Route path="/workDetails" element={<WorkDetails />} />
+
           {/* courses  */}
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courseDetails" element={<CourseDetails />} />
           {/* contact  */}
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

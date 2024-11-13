@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 export function WorkCard({ image, title }) {
+  const navigate = useNavigate();
   return (
-    <div className="relative group border-blue-500 cursor-pointer rounded-2xl overflow-hidden">
+    <div
+      className="relative group border-blue-500 cursor-pointer rounded-2xl overflow-hidden"
+      onClick={() => navigate("/workDetails")}
+    >
       <img
         width={500}
         height={500}

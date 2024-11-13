@@ -34,7 +34,10 @@ const About = ({ image }) => {
               </div>
             </div>
             <div>
-              <button className="py-3 px-8 border-2 rounded-full bg-blue-500 text-white flex text-lg">
+              <button
+                className="py-3 px-8 border-2 rounded-full bg-blue-500 text-white flex text-lg"
+                onClick={() => navigate("/about-us")}
+              >
                 Learn More
                 <MdKeyboardArrowRight className="mt-[6px] ml-1" />
               </button>

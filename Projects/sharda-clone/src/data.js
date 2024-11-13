@@ -17,6 +17,14 @@ import client1 from "/clients/newmew_logo.jpg"
 import blog1 from "/blogs/blog1.jpg"
 import blog2 from "/blogs/blog2.jpg"
 import blog3 from "/blogs/blog3.jpg"
+import b4 from "/blogs/b4.png"
+import b5 from "/blogs/b5.png"
+import b6 from "/blogs/b6.jpg"
+import b7 from "/blogs/b7.png"
+import b8 from "/blogs/b8.jpg"
+import b9 from "/blogs/b9.jpg"
+import b10 from "/blogs/b10.jpg"
+
 
 import c4 from '/career/c4.jpg'
 
@@ -194,37 +202,135 @@ export const blogs = [
     image: blog1,
     title: "Logo Making",
     desc: "Sharda Production’s Guide to Exceptional Logo Making Intro: Logo Making Logo Making: In the world of branding, a logo is not just a symbol but the heart of a company’s",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    route: "/logo-making"
   },
   {
     image: blog2,
     title: "Logo Designing",
     desc: "Behind the Scenes: The Art of Logo Designing with Sharda Production Intro: Logo Designing Logo Designing: In a world inundated with brands clamoring for attention, a logo does not just",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    route: "/logo-designing"
   },
   {
     image: blog3,
     title: "Brand Building",
     desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
   },
   {
     image: blog3,
     title: "Brand Building",
     desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+
   },
   {
     image: blog3,
     title: "Brand Building",
     desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
   },
   {
     image: blog3,
     title: "Brand Building",
     desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
-    date: "February 25, 2024"
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b4,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b5,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b6,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: blog3,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b7,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b7,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b7,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b8,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b9,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b10,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b10,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
+  },
+  {
+    image: b10,
+    title: "Brand Building",
+    desc: "Inside Sharda Production: Mastering the Art of Brand Building Intro: Brand Building Brand Building: In today’s fast-paced digital world, mastering the art of brand building has become more crucial than",
+    date: "February 25, 2024",
+    logo: "/brand-bulding"
   },
 ]
 
@@ -328,5 +434,55 @@ export const teams = [
     image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     name: "Deepesh Nakarmi",
     position: "Founder & CMO"
+  },
+]
+
+export const courses = [
+  {
+    image: service1,
+    title: "Digital Marketing",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/digital-marketing",
+    date: "April 7, 2023"
+  },
+  {
+    image: service1,
+    title: "Digital Marketing",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/digital-marketing",
+    date: "April 7, 2023"
+
+  },
+  {
+    image: service2,
+    title: "Graphic Design",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/graphic-design",
+    date: "April 7, 2023"
+
+  },
+  {
+    image: service1,
+    title: "Digital Marketing",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/digital-marketing",
+    date: "April 7, 2023"
+
+  },
+  {
+    image: service1,
+    title: "Digital Marketing",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/digital-marketing",
+    date: "April 7, 2023"
+
+  },
+  {
+    image: service1,
+    title: "Digital Marketing",
+    desc: "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser",
+    route: "/digital-marketing",
+    date: "April 7, 2023"
+
   },
 ]

@@ -14,7 +14,10 @@ export function BlogCard({ image, title, desc, date }) {
         <p className="font-normal text-gray-700 dark:text-gray-400 pb-8">
           {desc}
         </p>
-        <Link to="" className="text-sm text-blue-500 font-bold hover:underline">
+        <Link
+          to="/blogDetails"
+          className="text-sm text-blue-500 font-bold hover:underline"
+        >
           READ MORE
         </Link>
       </div>
